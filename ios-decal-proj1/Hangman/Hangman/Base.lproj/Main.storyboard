@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="33m-bG-32Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hangman View Controller-->
+        <scene sceneID="g3I-Av-Lxo">
+            <objects>
+                <viewController id="33m-bG-32Y" customClass="HangmanViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fga-sG-nzY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rkb-O3-rip"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xKS-yl-l6T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BvZ-su-1Xg">
+                                <rect key="frame" x="112" y="40" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.4732708122" green="0.4205603175" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="wSu-bd-SxT"/>
+                                    <constraint firstAttribute="width" constant="150" id="xfj-Ev-XGA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _ _ _ _ _ _ _ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwA-XU-WH6">
+                                <rect key="frame" x="147.5" y="238" width="105" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ty4-JW-5sS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guesses: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzF-TO-xpO">
+                                <rect key="frame" x="142.5" y="294" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxd-xm-jl0">
+                                <rect key="frame" x="156" y="555" width="48" height="30"/>
+                                <state key="normal" title="Guess!"/>
+                                <connections>
+                                    <action selector="guessEntered:" destination="33m-bG-32Y" eventType="touchUpInside" id="KsK-YJ-48c"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OMF-bP-PSm">
+                                <rect key="frame" x="132" y="515" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="ft9-Po-XpQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="h3d-pv-jIP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letterEntered:" destination="33m-bG-32Y" eventType="editingDidEnd" id="zli-nM-pGJ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gS-Rk-IvG">
+                                <rect key="frame" x="161" y="586" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="newGame:" destination="33m-bG-32Y" eventType="touchUpInside" id="aKg-Ra-psL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gzF-TO-xpO" firstAttribute="top" secondItem="VwA-XU-WH6" secondAttribute="bottom" constant="35" id="01h-Jj-LN7"/>
+                            <constraint firstItem="gzF-TO-xpO" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" constant="-7.5" id="7rd-mu-Xap"/>
+                            <constraint firstItem="7gS-Rk-IvG" firstAttribute="top" secondItem="bxd-xm-jl0" secondAttribute="bottom" constant="20" id="BtZ-UF-v4r"/>
+                            <constraint firstItem="BvZ-su-1Xg" firstAttribute="top" secondItem="fga-sG-nzY" secondAttribute="bottom" constant="20" id="Kwl-PU-CQs"/>
+                            <constraint firstItem="bxd-xm-jl0" firstAttribute="top" secondItem="OMF-bP-PSm" secondAttribute="bottom" constant="10" id="YTc-Rw-3wn"/>
+                            <constraint firstItem="BvZ-su-1Xg" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" id="Ybg-UO-pRt"/>
+                            <constraint firstItem="OMF-bP-PSm" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" constant="-7" id="dpi-XU-Kry"/>
+                            <constraint firstItem="7gS-Rk-IvG" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" id="eV7-Od-GdU"/>
+                            <constraint firstItem="bxd-xm-jl0" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" constant="-7.5" id="pQk-9J-hre"/>
+                            <constraint firstItem="VwA-XU-WH6" firstAttribute="top" secondItem="BvZ-su-1Xg" secondAttribute="bottom" constant="48" id="r4i-kt-ust"/>
+                            <constraint firstItem="OMF-bP-PSm" firstAttribute="top" secondItem="gzF-TO-xpO" secondAttribute="bottom" constant="200" id="sPO-ft-qDT"/>
+                            <constraint firstItem="VwA-XU-WH6" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" constant="12.5" id="zDc-fP-HdQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guesses" destination="gzF-TO-xpO" id="kCn-nG-Pq7"/>
+                        <outlet property="hangMan" destination="BvZ-su-1Xg" id="JtK-jY-P5w"/>
+                        <outlet property="letterGuess" destination="OMF-bP-PSm" id="K75-yY-StC"/>
+                        <outlet property="submitGuess" destination="bxd-xm-jl0" id="ogX-nr-zU8"/>
+                        <outlet property="word" destination="VwA-XU-WH6" id="iEq-xP-BN3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJo-zA-LYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="-133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
