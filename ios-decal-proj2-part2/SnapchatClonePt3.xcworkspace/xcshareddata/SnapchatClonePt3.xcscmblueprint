@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "72551981A54D922923B0C1FAAB7B45C517AB1BA7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E19B17DC42AE7B27D5B940A833A8409AA4FFE861" : 9223372036854775807,
+    "72551981A54D922923B0C1FAAB7B45C517AB1BA7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EC4FD6C2-08D7-4629-9D83-1B3494770FAA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E19B17DC42AE7B27D5B940A833A8409AA4FFE861" : "",
+    "72551981A54D922923B0C1FAAB7B45C517AB1BA7" : "ios-decal-proj2-part2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SnapchatClonePt3",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SnapchatClonePt3.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kagrawal2\/ios-decal-proj2-part2",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "72551981A54D922923B0C1FAAB7B45C517AB1BA7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kagrawal2\/iOS-Decal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E19B17DC42AE7B27D5B940A833A8409AA4FFE861"
+    }
+  ]
+}
